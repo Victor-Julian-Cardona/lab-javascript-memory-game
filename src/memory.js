@@ -11,7 +11,7 @@ class MemoryGame {
       let cardsCopy = []
       for (let i = 0; i < 24; i++) {
         let randIndex = Math.floor(Math.random() * this.cards.length)
-        let removedCard = this.cards.splice(randIndex,1)
+        let removedCard = this.cards.splice(randIndex,1)[0]
         cardsCopy.push(removedCard)
         }
         this.cards = cardsCopy
